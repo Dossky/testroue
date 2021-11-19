@@ -202,11 +202,13 @@ span b{
 function myfunction() {
 	var x = 1024;
 	var y = 9999;
-	var min = 15;
-	var max = 30;
+	var min = 1;
+	var max = 6;
 	//var deg = Math.floor(Math.random() * (x - y)) + y; 
 	var nombreDeTour = (Math.floor(Math.random() * (max - min + 1) + min))
-	var deg = 360 * (nombreDeTour + 6); 
+	console.log("nombreDeTour"  + nombreDeTour);
+	var deg = 360 * (nombreDeTour*6); 
+	console.log("deg"  + deg);
 	var code = document.getElementById('codeinput').value;
 	
 	
